@@ -1,0 +1,189 @@
+### Collections ###
+1. How do you convert a list into a HashMap?
+2. How do you iterate a map having a key and a list of values?
+3. What is the difference between Iterator, ListIterator, and Enumerator?
+4. Which collections support ListIterator?
+5. How do you make a non-synchronized map and list synchronized (by using collection methods)?
+6. What is the concept behind two objects stored in the same bucket?
+7. What are the differences between HashMap and ConcurrentHashMap?
+8. Describe the Collection and Map hierarchy.
+9. List synchronized objects in collections.
+10. How do you find duplicate values in a string using collections?
+11. Compare Comparable and Comparator.
+12. Describe ConcurrentHashMap.
+13. What is the underlying data structure of HashMap?
+14. What is the underlying data structure of ArrayList?
+15. What happens if there is a collision in the values of a map?
+16. What is WeakHashMap? Provide a scenario where we can use it.
+17. Which Collection would you use to design a dictionary?
+18. Why does List allow duplicates but not Set internally?
+19. What are the differences between HashMap and HashSet?
+20. How does TreeSet work? Can we add different types of objects to TreeSet?
+21. What do fail-safe and fail-fast mean?
+22. Compare List and Set.
+23. List methods in the Object class.
+24. Name immutable classes other than String.
+25. Describe the internal implementation of HashMap.
+26. What is the package for primitive data types and collections?
+27. Define marker interface in Java and provide examples.
+28. What is a marker interface?
+29. What is the difference between serialization and API because in both concepts, we expose our business object over the network?
+30. What do you understand by copy on ArrayList?
+31. What is the difference between TreeMap and HashMap?
+32. How does LinkedHashMap maintain the order of elements?
+33. What is the difference between ArrayList and Vector?
+34. How does PriorityQueue work internally?
+
+### Threading ###
+1. What is InterruptedException?
+2. What is the use of volatile and synchronized?
+3. Explain ThreadScheduler.
+4. Which Map is used in ThreadScheduler and why?
+5. Explain synchronized and its implementation in your project.
+6. Compare wait vs sleep.
+7. Discuss synchronization in threads.
+8. Choose between Runnable or Thread.
+9. How do you create a singleton?
+10. How many ways can you define a Thread?
+11. What is the use of a thread pool?
+12. What happens if I clone a singleton object?
+13. How can you make a multi-threaded singleton object synchronized?
+14. What is the use of the Callable interface?
+15. Explain ThreadLocal.
+16. Define ExecutorService.
+17. What is a BlockingQueue?
+18. What are the thread states?
+19. What is the difference between wait(), sleep(), and wait(), yield()?
+20. What happens if you call run() directly? How do you make a thread Daemon?
+21. How do you monitor your JVM and identify deadlock and memory leaks?
+22. How do you detect deadlock in a thread?
+23. What are the ways to create a thread, and which is the better approach?
+24. What is locking in terms of a thread?
+25. What is the difference between ReentrantLock and synchronized keyword?
+26. Explain the concept of thread priority.
+27. What is the difference between a daemon thread and a user thread?
+28. How does the Fork/Join framework work?
+
+### OOP Concepts ###
+1. Define polymorphism. Where have you used polymorphism in your project?
+2. Explain encapsulation. Where have you used encapsulation in your project?
+3. What is an abstract class?
+4. How is an abstract class different from an interface?
+5. Differentiate between Object-oriented and object-based languages.
+6. Define static and instance variables.
+7. How can you make your own class immutable?
+8. What are the differences among String, StringBuffer, and StringBuilder?
+9. Differentiate between composition and aggregation.
+10. What is the state of an object?
+11. What is the difference between static block and static method?
+12. Can I access an instance field from a static context?
+13. Can I call a static method through the object reference?
+14. Can I declare a class as private?
+15. What is the difference between serialization and externalization?
+16. How can I restrict that no one can make an IS-A relationship with my class?
+17. What is ClassCastException? Give one example and how to resolve it?
+18. What is the concept behind two objects stored in the same bucket?
+19. What do you understand by copy on ArrayList?
+20. How to access external properties in a Spring application?
+21. What are servlets?
+22. What is generic and HttpServlet?
+23. What is the use of the Callable interface?
+24. What is the real use of polymorphism, with a real-time example?
+25. What is abstraction, and how do you achieve it?
+26. What is an interface?
+27. What are the types of inheritance?
+28. What is a string in Java? How do you create a string?
+29. What is method overloading and method overriding?
+30. Explain the concept of inheritance with an example.
+31. What is the difference between a constructor and a method?
+32. What is the use of the 'super' keyword in Java?
+
+### Exception Handling ###
+1. Differentiate between throw and throws.
+2. How do you write a user-defined Exception?
+3. Differentiate between exception and error.
+4. Describe the Exception Hierarchy.
+5. What is an exception and how many types are available?
+6. What exceptions have you faced in your project development, and how did you resolve them?
+7. Describe checked vs unchecked exceptions.
+8. What is the difference between serialization and web services because in both concepts, we expose our business object over the network?
+9. What is ClassCastException? Give one example and how to resolve it?
+10. What are the different types of exceptions in Java, and how do you handle exceptions?
+11. What is the purpose of the finally block?
+12. How does the try-with-resources statement work?
+13. What is the difference between checked and unchecked exceptions?
+
+### Java Basics ###
+1. What is "Reflection"?
+2. What is the return type of "executeUpdate()"?
+3. What is the difference between "Apache Server" & "Tomcat Server"?
+4. Why do we require an Application Server instead of a Web Server?
+5. An application is having "images". Which Server is preferable?
+6. Explain Java architecture.
+7. Explain JVM architecture.
+8. Refer to regular expressions.
+9. Explain autoboxing and autounboxing.
+10. What is a class loader and how is a class file loaded?
+11. Identify the various memory areas in JVM.
+12. What is the package for primitive data types and collections?
+13. Define marker interface in Java and provide examples.
+14. List methods in the Object class.
+15. Name the design patterns used in your project.
+16. Describe the differences between an abstract class and an interface.
+17. How are abstract classes and interfaces implemented in your project?
+18. Differentiate between JDK vs JRE.
+19. Explain Jar vs WAR.
+20. How do you compare two strings?
+21. Can the main method be overloaded?
+22. What is hashing in Java?
+23. What is the superclass of Java?
+24. What is the static keyword in Java?
+25. Explain different types of cloning.
+26. What is the difference between static block and static method?
+27. Can I access an instance field from a static context?
+28. Can I call a static method through the object reference?
+29. Can I declare a class as private?
+30. What is the state of an object?
+31. What is the difference between serialization and externalization?
+32. What is a marker interface?
+33. What is the difference between serialization and web services because in both concepts, we expose our business object over the network?
+34. How can I restrict that no one can make an IS-A relationship with my class?
+35. What is ClassCastException? Give one example and how to resolve it?
+36. Which server did you use, and which format did you use to package your application?
+37. If you are accessing another class and that class has some logical mistake, who will handle it? How will you know that the logic was written by whom?
+38. What is the concept behind two objects stored in the same bucket?
+39. What do you understand by copy on ArrayList?
+40. How to access external properties in a Spring application?
+41. What are servlets?
+42. What is generic and HttpServlet?
+43. What is the use of the Callable interface?
+44. What is the difference between == and .equals() method?
+45. Explain the concept of pass-by-value and pass-by-reference in Java.
+46. What is the use of the 'this' keyword in Java?
+47. What is the difference between an interface and a class?
+48. What is the purpose of the 'final' keyword in Java?
+49. How does the 'instanceof' keyword work?
+
+### Streams and Lambda Expressions ###
+1. Given an array of data, use Stream to filter and collect the data to a map.
+2. Write the interface of Predicate as provided by Java.
+3. What is a Functional Interface and what is a lambda expression?
+4. How do you use the filter method in Streams?
+5. What is the difference between map() and flatMap() in Streams?
+6. How do you sort a collection using Streams?
+ 
+### File I/O ###
+1. How do you render Excel and PDF views to the end-user (using POI and iText APIs)?
+2. How do you read a file line by line in Java?
+3. What is the difference between FileReader and BufferedReader?
+4. How do you write data to a file using FileOutputStream?
+
+### JVM Internals ###
+1. Which algorithm is used by JVM while running Garbage Collection?
+2. Explain the different parts of JVM memory and how memory management works in JVM.
+3. How do you monitor your JVM and identify deadlock and memory leaks?
+4. How can you increase memory size in Java?
+5. How can you increase heap size in Java?
+6. What is the difference between the heap and stack memory?
+7. How does the Just-In-Time (JIT) compiler work?
+8. What are the different types of garbage collectors in Java? 
