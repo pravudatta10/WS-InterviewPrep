@@ -1,0 +1,61 @@
+1. What is the difference between a lambda expression and a method reference in Java 8? 
+2. Can you explain the concept of a "target type" in lambda expressions? 
+3. How do you use lambda expressions to implement the Comparator interface? 
+4. What is the difference between forEach and forEachOrdered in Java 8? 
+5. Can you write a lambda expression that takes a list of integers as input and returns the sum of the squares of the numbers? 
+ 
+Stream API 
+ 
+1. What is the difference between stream() and parallelStream() in Java 8? 
+2. Can you explain the concept of "intermediate operations" and "terminal operations" in the Stream API? 
+3. How do you use the filter() method to filter out elements from a stream? 
+4. What is the difference between reduce() and collect() in the Stream API? 
+5. Can you write a stream pipeline that takes a list of strings as input and returns the longest string? 
+ 
+Method References 
+ 
+1. What is the syntax for a method reference in Java 8? 
+2. Can you explain the difference between a static method reference and an instance method reference? 
+3. How do you use method references to implement the Function interface? 
+4. What is the difference between a constructor reference and a method reference? 
+5. Can you write a method reference that takes a string as input and returns its length? 
+ 
+Optional Class 
+ 
+1. What is the purpose of the Optional class in Java 8? 
+2. Can you explain the difference between Optional.of() and Optional.ofNullable()? 
+3. How do you use the isPresent() method to check if an Optional instance contains a value? 
+4. What is the difference between get() and orElse() in the Optional class? 
+5. Can you write an example of using Optional to handle null values in a method? 
+ 
+Default Methods 
+ 
+1. What is the purpose of default methods in Java 8? 
+2. Can you explain the difference between a default method and an abstract method? 
+3. How do you use default methods to provide a default implementation for an interface method? 
+4. What is the difference between a default method and a static method in an interface? 
+5. Can you write an example of using default methods to provide a default implementation for an interface method? 
+ 
+Java 8 Date and Time API 
+ 
+1. What is the purpose of the java.time package in Java 8? 
+2. Can you explain the difference between LocalDate and LocalDateTime? 
+3. How do you use the Period class to calculate the difference between two dates? 
+4. What is the difference between ZoneId and ZoneOffset? 
+5. Can you write an example of using the java.time package to calculate the current date and time in a specific time zone? 
+ 
+Java 8 Concurrency 
+ 
+1. What is the purpose of the java.util.concurrent package in Java 8? 
+2. Can you explain the difference between CompletableFuture and Future? 
+3. How do you use the ExecutorService interface to execute tasks concurrently? 
+4. What is the difference between Callable and Runnable? 
+5. Can you write an example of using CompletableFuture to execute tasks concurrently and handle exceptions? 
+ 
+Java 8 Miscellaneous 
+ 
+1. What is the purpose of the java.util.function package in Java 8? 
+2. Can you explain the difference between Predicate and Function? 
+3. How do you use the Supplier interface to provide a default value? 
+4. What is the difference between BiFunction and Function? 
+5. Can you write an example of using java.util.function to implement a simple calculator? 
