@@ -1,0 +1,30 @@
+### Design Patterns:
+
+1. Factory Pattern:
+    A design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. It is used to instantiate objects at runtime without specifying the exact class of the object that will be created.
+
+2. Builder Pattern:
+    A design pattern that provides a way to construct a complex object step by step. It separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+
+3. Proxy Pattern:
+    A design pattern that provides a surrogate or placeholder for another object to control access to it. It can be used to add a layer of security, manage resource access, or implement lazy loading. In the context of reducing expensive API calls, a proxy can cache results and return cached data instead of making repeated calls.
+
+4. Saga Pattern:
+    A pattern used in microservices architecture to manage distributed transactions. It involves a sequence of local transactions, where each transaction updates the data within a single service and publishes an event or message. If a transaction fails, compensating transactions are executed to undo the changes made by previous transactions. It often uses message brokers like Kafka or RabbitMQ for coordination.
+
+### SOLID Principles:
+
+1. S - Single Responsibility Principle:
+    A class should have only one reason to change, meaning it should have only one job or responsibility. This principle promotes cohesion and reduces the complexity of classes.
+
+2. O - Open/Closed Principle:
+    Software entities (classes, modules, functions, etc.) should be open for extension but closed for modification. This means you should be able to add new functionality without changing existing code.
+
+3. L - Liskov Substitution Principle:
+    Objects of a superclass should be replaceable with objects of a subclass without affecting the correctness of the program. Subtypes must be substitutable for their base types without altering the desirable properties of the program.
+
+4. I - Interface Segregation Principle:
+    Clients should not be forced to depend on interfaces they do not use. This principle suggests that interfaces should be small and specific, rather than large and general.
+
+5. D - Dependency Inversion Principle:
+    High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces). Additionally, abstractions should not depend on details. Details should depend on abstractions. This principle helps in reducing the coupling between software components.
