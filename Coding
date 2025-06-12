@@ -1,0 +1,135 @@
+package org.example.stream;
+
+import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class TwelveJuly {
+    static List<String> cities = Arrays.asList("Mumbai", "Delhi", "Bangalore", "Chennai");
+    static List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+    static List<String> names = Arrays.asList("Amit", "Deepa", "Rahul", "Akhil");
+
+    //count the frequency of character
+    public static void m1() {
+        System.out.println("********** m1 **********");
+        String str = "hiMadam";
+        Map<String, Long> map = Arrays.stream(str.split("")).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println(map);
+        Map<Character, Long> map1 = str.chars().mapToObj(c -> (char) c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        System.out.println(map1);
+    }
+
+    //Collect to a List
+    public static void m2() {
+        List<String> s = cities.stream().collect(Collectors.toList());
+        System.out.println(s);
+    }
+
+    //Collect to a Set
+    public static void m3() {
+        Set<Number> set = numbers.stream().collect(Collectors.toSet());
+        System.out.println(set);
+    }
+
+    //Collect to a Map
+    public static void m4() {
+        Map<String, Integer> map = cities.stream().collect(Collectors.toMap(citi -> citi, String::length));
+        System.out.println(map);
+    }
+
+    //Summing Elements
+    public static void m6() {
+        Integer sum = numbers.stream().collect(Collectors.summingInt(Integer::intValue));
+        System.out.println(sum);
+        Integer sum1 = numbers.stream().mapToInt(Integer::intValue).sum();
+        System.out.println(sum1);
+    }
+
+    //    Grouping Elements by a Key
+    public static void m7() {
+        Map<Character, List<String>> map = cities.stream().collect(Collectors.groupingBy(item -> item.charAt(0)));
+        System.out.println(map);
+    }
+
+    //Partitioning Elements by a Predicate
+    public static void m8() {
+        Map<Boolean, List<Integer>> map = numbers.stream().collect(Collectors.groupingBy(i -> i % 2 == 0));
+        System.out.println(map);
+    }
+
+    //Collecting and Reducing Elements
+    public static void m9() {
+        int sum = numbers.stream().reduce(0, Integer::sum);
+        System.out.println(sum);
+    }
+
+    //compose
+    public static void m10() {
+        Function<String, String> toUppercase = String::toUpperCase;
+        Function<String, String> exclaim = s -> s + "!";
+        Function<String, String> res = exclaim.compose(toUppercase);
+        System.out.println(res.apply("Hello"));
+    }
+
+    //andThen
+    public static void m11() {
+        Function<String, String> toUppercase = String::toUpperCase;
+        Function<String, String> exclaim = s -> s + "!";
+        Function<String, String> res = exclaim.andThen(toUppercase);
+        System.out.println(res.apply("Hello"));
+    }
+
+    //How do you use lambda expressions to implement the Comparator interface?
+    public static void m12() {
+//        numbers.sort((a, b) -> b - a);
+        numbers.sort((a, b) -> b.compareTo(a));
+        System.out.println(numbers);
+    }
+
+    //What is the difference between forEach and forEachOrdered in Java 8?
+    public static void m13() {
+        numbers.parallelStream().forEach(System.out::print);
+        System.out.println();
+        numbers.parallelStream().forEachOrdered(System.out::print);
+    }
+
+    //Can you write a lambda expression that takes a list of integers as input and returns
+    // the sum of the squares of the numbers?
+    public static void m14() {
+        var sum = numbers.stream().map(i -> i * i).reduce(Integer::sum);
+        System.out.println(sum.get());
+    }
+
+    //How do you use the filter() method to filter out elements from a stream?
+    public static void m15() {
+        List<String> l = cities.stream().filter(item -> item.startsWith("M")).toList();
+        System.out.println(l);
+    }
+
+    //Can you write a stream pipeline that takes a list of strings as input and returns the longest string?
+    public static void m16() {
+        String s = cities.stream().max(Comparator.comparing(String::length)).get();
+        System.out.println(s);
+    }
+
+    //Can you write an example of using Optional to handle null values in a method?
+    public static void m17() {
+        String str = null;
+        String s = Optional.ofNullable(str).orElse("UnKnown");
+        System.out.println(s);
+    }
+
+    //How do you use the ExecutorService interface to execute tasks concurrently?
+    public static void m18() {
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
+        executorService.submit(() -> {
+            System.out.println("Hi Welcome");
+        });
+    }
+
+    public static void main(String[] args) {
+        m18();
+    }
+}
